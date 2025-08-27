@@ -336,11 +336,24 @@
                   "new": false,
                   "number": 6,
                   "score": ""
+                },
+                {
+                  "id": "9b88affd-a9d5-4610-805a-afb5a2310b50",
+                  "title": "Upload file berbahaya",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "- Attacker upload file berbahaya dan server menjalankan script tersebut.\n- Sistem bisa lumpuh\n- Attacker mendapatkan akses ke server",
+                  "mitigation": "- Validasi setiap file yang di upload.\n- Allowlist ketat ekstensi & MIME.\n- Batasi ukuran file.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 15,
+                  "score": "8"
                 }
               ],
               "threatFrequency": {
                 "spoofing": 0,
-                "tampering": 4,
+                "tampering": 5,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 1,
@@ -651,14 +664,7 @@
                 "elevationOfPrivilege": 0
               }
             },
-            "zIndex": 4,
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
-            }
+            "zIndex": 4
           },
           {
             "position": {
@@ -1522,6 +1528,6 @@
     ],
     "diagramTop": 5,
     "reviewer": "Spe Solution",
-    "threatTop": 14
+    "threatTop": 15
   }
 }
