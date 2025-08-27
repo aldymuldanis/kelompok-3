@@ -2737,72 +2737,6 @@
                   "name": "block"
                 },
                 "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Produce",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "2adb85cb-e735-4583-963a-f671b9e8fe2e",
-                  "title": "Vulnerable and Outdated Components",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Information disclosure",
-                  "description": "Penyerang dapat memanfaatkan vulnerability dari component ",
-                  "mitigation": "Dokumentasi Plugin party\nMengunakan plugin party yang tidak ada vulnerability\nReview secara berkala plugin party yang digunakan",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 23,
-                  "score": ""
-                }
-              ],
-              "threatFrequency": {
-                "tampering": 0,
-                "informationDisclosure": 1,
-                "denialOfService": 0
-              }
-            },
-            "labels": [
-              "Produce"
-            ],
-            "id": "29d187a1-c890-4909-8ad4-856a9c657c51",
-            "source": {
-              "x": 1130,
-              "y": 405
-            },
-            "target": {
-              "cell": "d663c355-7f9f-4dec-880d-71a44651b319",
-              "port": "f7e93d7d-f7bd-4834-9104-44b0424b206f"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
                   "name": "block"
                 },
                 "strokeDasharray": null
@@ -2857,6 +2791,57 @@
               "cell": "0c17d958-6333-4b32-9a7e-5fd13db05c44",
               "port": "f53731f7-fe29-4361-ac31-9a7d4cd91c9b"
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Produce",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Produce"
+            ],
+            "id": "29d187a1-c890-4909-8ad4-856a9c657c51",
+            "source": {
+              "x": 1130,
+              "y": 405
+            },
+            "target": {
+              "cell": "d663c355-7f9f-4dec-880d-71a44651b319",
+              "port": "f7e93d7d-f7bd-4834-9104-44b0424b206f"
+            },
+            "vertices": []
           },
           {
             "position": {
