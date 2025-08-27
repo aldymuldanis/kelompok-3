@@ -3155,8 +3155,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "48173ebc-2d2c-46b8-b827-13390b6a73ce",
             "zIndex": -1,
+            "id": "48173ebc-2d2c-46b8-b827-13390b6a73ce",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary",
@@ -3183,6 +3183,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -3266,7 +3267,6 @@
               ]
             },
             "id": "5b16f624-cd72-4860-84cf-cdd54136319f",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Actor",
@@ -3300,6 +3300,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -3383,7 +3384,6 @@
               ]
             },
             "id": "4b169156-3eaf-48c9-a474-b2fbf4b6bb8a",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Form Pengaduan",
@@ -3419,6 +3419,13 @@
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -3442,6 +3449,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -3525,7 +3533,6 @@
               ]
             },
             "id": "f9d9d001-ed5e-4653-8037-ecaee76d65c4",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "API",
@@ -3581,6 +3588,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -3664,7 +3672,6 @@
               ]
             },
             "id": "f7e6f1e1-e279-4c63-bdaa-f30fab54a7d0",
-            "zIndex": 4,
             "data": {
               "type": "tm.Actor",
               "name": "Actor",
@@ -3701,6 +3708,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -3784,7 +3792,6 @@
               ]
             },
             "id": "7ef661ae-e0ca-4cca-bae5-f592b908082d",
-            "zIndex": 5,
             "data": {
               "type": "tm.Store",
               "name": "Database",
@@ -3822,6 +3829,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 6,
             "ports": {
               "groups": {
                 "top": {
@@ -3905,7 +3913,6 @@
               ]
             },
             "id": "4f5b631f-74a2-4689-8503-cc9ecac5e172",
-            "zIndex": 6,
             "data": {
               "type": "tm.Process",
               "name": "List Pengaduan Online",
