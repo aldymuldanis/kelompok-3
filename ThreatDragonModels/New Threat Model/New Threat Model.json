@@ -1765,19 +1765,12 @@
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
             "position": {
               "x": 950,
-              "y": 310.00000000000205
+              "y": 320
             },
             "size": {
               "width": 180,
@@ -2057,22 +2050,29 @@
                   "id": "1c1607ec-a6e3-4ae0-b4fb-72b10063c949",
                   "title": " Security Misconfiguration",
                   "status": "Open",
-                  "severity": "TBD",
+                  "severity": "Critical",
                   "type": "Information disclosure",
                   "description": "Dokumen dapat diakses secara publik",
                   "mitigation": "Simpan dokumen terpisah dari server aplikasi\nBatasi akses dokumen\nImplementasi CICD\nHapus dummy, debuging, sample fitur ",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 22,
-                  "score": ""
+                  "score": "9"
                 }
               ],
               "threatFrequency": {
                 "tampering": 0,
                 "repudiation": 0,
-                "informationDisclosure": 3,
+                "informationDisclosure": 4,
                 "denialOfService": 0
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -2979,11 +2979,11 @@
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 17,
-                  "score": "9,8"
+                  "score": "9"
                 }
               ],
               "threatFrequency": {
-                "spoofing": 8,
+                "spoofing": 10,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
@@ -3016,6 +3016,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -3099,7 +3100,6 @@
               ]
             },
             "id": "d663c355-7f9f-4dec-880d-71a44651b319",
-            "zIndex": 12,
             "data": {
               "type": "tm.Store",
               "name": "Rabbitmq",
