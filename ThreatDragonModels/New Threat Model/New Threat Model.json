@@ -2286,71 +2286,6 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Post Request",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "2b7afbbd-f941-49b0-8676-9b809a6a989e",
-                  "title": "DoS",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Denial of service",
-                  "description": "Penyerang dapat mengirimkan request pengaduan dalam jumlah banyak",
-                  "mitigation": "Menerapkan rate limit atau captcha",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 10,
-                  "score": ""
-                }
-              ],
-              "threatFrequency": {
-                "tampering": 0,
-                "informationDisclosure": 0,
-                "denialOfService": 1
-              }
-            },
-            "labels": [
-              "Post Request"
-            ],
-            "id": "c57a4ba3-57e0-4bec-89e9-69fb8a640a75",
-            "source": {
-              "cell": "4b169156-3eaf-48c9-a474-b2fbf4b6bb8a",
-              "port": "7b774477-c0b2-47f8-aefd-727196443667"
-            },
-            "target": {
-              "cell": "f9d9d001-ed5e-4653-8037-ecaee76d65c4",
-              "port": "e769a49b-887e-41b8-967c-c95505ba66cf"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
                 "stroke": "#333333",
                 "targetMarker": {
                   "name": "block"
@@ -2438,6 +2373,71 @@
               "port": "39b78a07-1514-4da1-bb60-f8e36a5d90a5"
             },
             "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Post Request",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "2b7afbbd-f941-49b0-8676-9b809a6a989e",
+                  "title": "DoS",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Denial of service",
+                  "description": "Penyerang dapat mengirimkan request pengaduan dalam jumlah banyak",
+                  "mitigation": "Menerapkan rate limit atau captcha",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1
+              }
+            },
+            "labels": [
+              "Post Request"
+            ],
+            "id": "c57a4ba3-57e0-4bec-89e9-69fb8a640a75",
+            "source": {
+              "cell": "4b169156-3eaf-48c9-a474-b2fbf4b6bb8a",
+              "port": "7b774477-c0b2-47f8-aefd-727196443667"
+            },
+            "target": {
+              "cell": "f9d9d001-ed5e-4653-8037-ecaee76d65c4",
+              "port": "e769a49b-887e-41b8-967c-c95505ba66cf"
+            }
           }
         ]
       }
