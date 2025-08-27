@@ -1668,6 +1668,13 @@
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1810,13 +1817,6 @@
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -2417,20 +2417,20 @@
                   "id": "2b7afbbd-f941-49b0-8676-9b809a6a989e",
                   "title": "DoS",
                   "status": "Open",
-                  "severity": "TBD",
+                  "severity": "High",
                   "type": "Denial of service",
                   "description": "Penyerang dapat mengirimkan request pengaduan dalam jumlah banyak",
                   "mitigation": "Menerapkan rate limit atau captcha",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 10,
-                  "score": ""
+                  "score": "8,6"
                 }
               ],
               "threatFrequency": {
                 "tampering": 0,
                 "informationDisclosure": 0,
-                "denialOfService": 1
+                "denialOfService": 2
               }
             },
             "labels": [
