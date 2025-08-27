@@ -1377,8 +1377,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "2504bbed-96e6-46dd-b876-16e1fe97163f",
             "zIndex": -1,
+            "id": "2504bbed-96e6-46dd-b876-16e1fe97163f",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary",
@@ -1405,6 +1405,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -1488,7 +1489,6 @@
               ]
             },
             "id": "5606a7be-9b99-4a85-a83a-178a1bd1109f",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Actor",
@@ -1525,6 +1525,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -1608,7 +1609,6 @@
               ]
             },
             "id": "81a5abe0-9aa2-4ca1-9d6e-6034fa253198",
-            "zIndex": 2,
             "data": {
               "type": "tm.Store",
               "name": "Database",
@@ -1646,6 +1646,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -1729,7 +1730,6 @@
               ]
             },
             "id": "8e1157ad-dad0-4096-98c2-3b0b1450fef5",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "Form Pengajuan",
@@ -1788,6 +1788,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -1871,7 +1872,6 @@
               ]
             },
             "id": "a5c2d942-71cf-4972-ab29-58385593f544",
-            "zIndex": 4,
             "data": {
               "type": "tm.Process",
               "name": "API",
@@ -1891,22 +1891,42 @@
                   "status": "Open",
                   "severity": "Critical",
                   "type": "Information disclosure",
-                  "description": "Penyerang dapat mengakses data pribadi pengguna",
-                  "mitigation": "Masking data sensitif",
+                  "description": "Penyerang dapat mengakses data pribadi pengguna termasuk dokumen seperti KK, Akta",
+                  "mitigation": "Masking data sensitif\nReview UAM dan RBAC\nImplementasi default deny",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 11,
                   "score": "9,4"
+                },
+                {
+                  "id": "d79da04c-3e4d-410d-8acc-8d5250d73e08",
+                  "title": "SQL Injection",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Pengguna dapat mengirimkan sql injection dari form pengajuan ktp baru",
+                  "mitigation": "validasi dan sanitasi input, menggunakan ORM",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 16,
+                  "score": "8,4"
                 }
               ],
               "threatFrequency": {
                 "spoofing": 0,
                 "tampering": 0,
                 "repudiation": 0,
-                "informationDisclosure": 2,
+                "informationDisclosure": 4,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1933,6 +1953,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -2016,7 +2037,6 @@
               ]
             },
             "id": "0c17d958-6333-4b32-9a7e-5fd13db05c44",
-            "zIndex": 5,
             "data": {
               "type": "tm.Store",
               "name": "Dokumen",
@@ -2051,6 +2071,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 6,
             "ports": {
               "groups": {
                 "top": {
@@ -2134,7 +2155,6 @@
               ]
             },
             "id": "9a15d7b2-cf1e-4d3d-b9bd-f72e0e369d28",
-            "zIndex": 6,
             "data": {
               "type": "tm.Actor",
               "name": "Actor",
@@ -2168,6 +2188,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 7,
             "ports": {
               "groups": {
                 "top": {
@@ -2251,7 +2272,6 @@
               ]
             },
             "id": "49202528-f7f9-482e-bd2f-2c1fcaadd000",
-            "zIndex": 7,
             "data": {
               "type": "tm.Process",
               "name": "Validasi Data",
@@ -2578,16 +2598,6 @@
             "target": {
               "cell": "a5c2d942-71cf-4972-ab29-58385593f544",
               "port": "ed3bd2b6-332f-46e5-820e-bbdd95596084"
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
             }
           }
         ]
@@ -3669,6 +3679,6 @@
     ],
     "diagramTop": 5,
     "reviewer": "Spe Solution",
-    "threatTop": 15
+    "threatTop": 16
   }
 }
