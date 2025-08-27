@@ -2180,7 +2180,7 @@
             "data": {
               "type": "tm.Actor",
               "name": "Actor",
-              "description": "Petugas",
+              "description": "Admin",
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
