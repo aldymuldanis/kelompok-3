@@ -21,7 +21,7 @@
     "diagrams": [
       {
         "id": 0,
-        "title": "Registrasi & Login Warga STRIDE diagram",
+        "title": "Registrasi & Login Warga",
         "diagramType": "STRIDE",
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
@@ -30,7 +30,34 @@
       },
       {
         "id": 1,
-        "title": "Pengajuan KTP Baru STRIDE diagram",
+        "title": "Pengajuan KTP Baru",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.5.0",
+        "cells": []
+      },
+      {
+        "id": 2,
+        "title": "Tracking Status Pengajuan",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.5.0",
+        "cells": []
+      },
+      {
+        "id": 3,
+        "title": "New STRIDE diagram",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.5.0",
+        "cells": []
+      },
+      {
+        "id": 4,
+        "title": "New STRIDE diagram",
         "diagramType": "STRIDE",
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
@@ -38,7 +65,7 @@
         "cells": []
       }
     ],
-    "diagramTop": 2,
+    "diagramTop": 5,
     "reviewer": "Spe Solution",
     "threatTop": 0
   }
