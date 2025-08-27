@@ -1368,12 +1368,12 @@
         "cells": [
           {
             "position": {
-              "x": 862,
-              "y": 185.00000000000205
+              "x": 861.9999999999995,
+              "y": 185.00000000000267
             },
             "size": {
               "width": 830,
-              "height": 420
+              "height": 550
             },
             "visible": true,
             "shape": "trust-boundary-box",
@@ -1936,11 +1936,13 @@
                 "text": "Dokumen"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2037,13 +2039,33 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "1c1607ec-a6e3-4ae0-b4fb-72b10063c949",
+                  "title": "Misconfiguratuin Server",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Dokumen dapat diakses secara publik",
+                  "mitigation": "Simpan dokumen terpisah dari server aplikasi\nBatasi akses dokumen",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 22,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
             }
           },
           {
@@ -2171,7 +2193,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Validasi Data"
+                "text": "Review &\nValidasi \nData Pengajuan"
               },
               "body": {
                 "stroke": "red",
@@ -2267,7 +2289,7 @@
             "id": "49202528-f7f9-482e-bd2f-2c1fcaadd000",
             "data": {
               "type": "tm.Process",
-              "name": "Validasi Data",
+              "name": "Review &\nValidasi \nData Pengajuan",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -2627,72 +2649,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Upload dokumen",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "77201a5c-1f4e-4f3e-a944-85a85c17f5c9",
-                  "title": "DoS",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Denial of service",
-                  "description": "Pengguna dapat mengupload file berukuran besar dengan jumlah yang banyak",
-                  "mitigation": "Batasi ukuran file dan jumlah upload",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 18,
-                  "score": "7,3"
-                }
-              ],
-              "threatFrequency": {
-                "tampering": 0,
-                "informationDisclosure": 0,
-                "denialOfService": 1
-              }
-            },
-            "labels": [
-              "Upload dokumen"
-            ],
-            "id": "03b5efda-3ace-42c5-82dd-9e9289517db8",
-            "source": {
-              "cell": "78a34a60-100d-4e6c-8211-e6c29ddac4d7",
-              "port": "7b5b660c-d56f-4f9d-82a7-4bd2d0c4c83c"
-            },
-            "target": {
-              "cell": "a5c2d942-71cf-4972-ab29-58385593f544",
-              "port": "ed3bd2b6-332f-46e5-820e-bbdd95596084"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Data Flow",
               "description": "",
               "outOfScope": false,
@@ -2749,6 +2705,118 @@
               "cell": "a5c2d942-71cf-4972-ab29-58385593f544",
               "port": "ed3bd2b6-332f-46e5-820e-bbdd95596084"
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Upload dokumen",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "77201a5c-1f4e-4f3e-a944-85a85c17f5c9",
+                  "title": "DoS",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Pengguna dapat mengupload file berukuran besar dengan jumlah yang banyak",
+                  "mitigation": "Batasi ukuran file dan jumlah upload",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 18,
+                  "score": "7,3"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1
+              }
+            },
+            "labels": [
+              "Upload dokumen"
+            ],
+            "id": "03b5efda-3ace-42c5-82dd-9e9289517db8",
+            "source": {
+              "cell": "78a34a60-100d-4e6c-8211-e6c29ddac4d7",
+              "port": "7b5b660c-d56f-4f9d-82a7-4bd2d0c4c83c"
+            },
+            "target": {
+              "cell": "a5c2d942-71cf-4972-ab29-58385593f544",
+              "port": "ed3bd2b6-332f-46e5-820e-bbdd95596084"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Produce",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Produce"
+            ],
+            "id": "29d187a1-c890-4909-8ad4-856a9c657c51",
+            "source": {
+              "x": 1130,
+              "y": 405
+            },
+            "target": {
+              "cell": "d663c355-7f9f-4dec-880d-71a44651b319",
+              "port": "f7e93d7d-f7bd-4834-9104-44b0424b206f"
+            },
+            "vertices": []
           },
           {
             "position": {
@@ -2870,11 +2938,11 @@
               "threats": [
                 {
                   "id": "c7642dc1-80f6-4866-b912-06c382df99de",
-                  "title": "Malware Upload",
+                  "title": "OS Command",
                   "status": "Open",
                   "severity": "Critical",
                   "type": "Spoofing",
-                  "description": "Pengguna dapat mengupload file malware melalui upload file dokumen",
+                  "description": "Pengguna dapat mengupload file skrip melalui upload file dokumen",
                   "mitigation": "Validasi tipe dan konten file yang di-upload\nSimpan file di folder yang tidak bisa dieksekusi sebagai script\nBatasi akses file hanya untuk user yang berhak",
                   "modelType": "STRIDE",
                   "new": false,
@@ -2883,13 +2951,137 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 3,
+                "spoofing": 8,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
+            }
+          },
+          {
+            "position": {
+              "x": 1410,
+              "y": 578
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Rabbitmq"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "74510251-d477-436b-b8bf-f1dbf9ce38c8"
+                },
+                {
+                  "group": "right",
+                  "id": "e1c986a2-afd9-41b3-ade4-543f0d4436bf"
+                },
+                {
+                  "group": "bottom",
+                  "id": "f84c0255-d719-4135-a2b3-37decd36c7c2"
+                },
+                {
+                  "group": "left",
+                  "id": "f7e93d7d-f7bd-4834-9104-44b0424b206f"
+                }
+              ]
+            },
+            "id": "d663c355-7f9f-4dec-880d-71a44651b319",
+            "zIndex": 12,
+            "data": {
+              "type": "tm.Store",
+              "name": "Rabbitmq",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
             }
           }
         ]
@@ -3971,6 +4163,6 @@
     ],
     "diagramTop": 5,
     "reviewer": "Spe Solution",
-    "threatTop": 21
+    "threatTop": 22
   }
 }
