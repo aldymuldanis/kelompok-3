@@ -2280,23 +2280,36 @@
               "threats": [
                 {
                   "id": "6f66c076-8a92-483c-8955-c3bbb8c04572",
-                  "title": "XSS",
+                  "title": "Broken Access Control",
                   "status": "Open",
                   "severity": "High",
-                  "type": "Information disclosure",
-                  "description": "Tampilan terganggu, proses pengajuan ktp baru terganggau dan pencurian cookies",
-                  "mitigation": "Frontend menerapkan dompurify",
+                  "type": "Repudiation",
+                  "description": "Petugas menyangkal aksi yang telah dilakukan.",
+                  "mitigation": "Implementasi Log Audittrail",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 15,
-                  "score": "7,4"
+                  "score": "9"
+                },
+                {
+                  "id": "82a58e55-da31-4a3b-9895-23141bad2c7c",
+                  "title": "XSS",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "script xss dapat merusak tampilan dan mengganggu proses operasional pengajuan ktp dan pencurian cookies",
+                  "mitigation": "Frontend implementasi dompurify",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 19,
+                  "score": "7,3"
                 }
               ],
               "threatFrequency": {
                 "spoofing": 0,
                 "tampering": 0,
-                "repudiation": 0,
-                "informationDisclosure": 1,
+                "repudiation": 1,
+                "informationDisclosure": 2,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
@@ -2487,71 +2500,6 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "0aa9fe80-837c-4464-920d-6169fc87c077",
-                  "title": "IDOR",
-                  "status": "Open",
-                  "severity": "High",
-                  "type": "Information disclosure",
-                  "description": "Pengguna dapat mengakses pengajuan KTP pengguna lainnya dengan urutan id",
-                  "mitigation": "Implementasi UUID versi 7 dan validasi user session",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 14,
-                  "score": "7,4"
-                }
-              ],
-              "threatFrequency": {
-                "tampering": 0,
-                "informationDisclosure": 1,
-                "denialOfService": 0
-              }
-            },
-            "labels": [
-              "Data Flow"
-            ],
-            "id": "c4baaa3c-e859-402b-af0f-98b41981d8dc",
-            "source": {
-              "cell": "8e1157ad-dad0-4096-98c2-3b0b1450fef5",
-              "port": "f4c8cebb-3f07-45d7-8012-caecd8530aa4"
-            },
-            "target": {
-              "cell": "a5c2d942-71cf-4972-ab29-58385593f544",
-              "port": "ed3bd2b6-332f-46e5-820e-bbdd95596084"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
                 "stroke": "#333333",
                 "targetMarker": {
                   "name": "block"
@@ -2597,53 +2545,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Upload dokumen",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Upload dokumen"
-            ],
-            "id": "03b5efda-3ace-42c5-82dd-9e9289517db8",
-            "source": {
-              "cell": "78a34a60-100d-4e6c-8211-e6c29ddac4d7",
-              "port": "7b5b660c-d56f-4f9d-82a7-4bd2d0c4c83c"
-            },
-            "target": {
-              "cell": "a5c2d942-71cf-4972-ab29-58385593f544",
-              "port": "ed3bd2b6-332f-46e5-820e-bbdd95596084"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -2664,12 +2567,31 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "71d6d34b-1dbf-406c-8023-299c83709493",
+                  "title": "MitM",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Penyerang dapat melakukan penggantian ID secara berurutan untuk mendapatkan data pribadi dan dokumen",
+                  "mitigation": "implementasi UUID versi 7 dan validasi user session",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 21,
+                  "score": "7,3"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "Data Flow"
@@ -2682,6 +2604,150 @@
             "target": {
               "cell": "a5c2d942-71cf-4972-ab29-58385593f544",
               "port": "a9737b87-08cf-4256-b895-5c6d3c5f838b"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Upload dokumen",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "77201a5c-1f4e-4f3e-a944-85a85c17f5c9",
+                  "title": "DoS",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Pengguna dapat mengupload file berukuran besar dengan jumlah yang banyak",
+                  "mitigation": "Batasi ukuran file dan jumlah upload",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 18,
+                  "score": "7,3"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1
+              }
+            },
+            "labels": [
+              "Upload dokumen"
+            ],
+            "id": "03b5efda-3ace-42c5-82dd-9e9289517db8",
+            "source": {
+              "cell": "78a34a60-100d-4e6c-8211-e6c29ddac4d7",
+              "port": "7b5b660c-d56f-4f9d-82a7-4bd2d0c4c83c"
+            },
+            "target": {
+              "cell": "a5c2d942-71cf-4972-ab29-58385593f544",
+              "port": "ed3bd2b6-332f-46e5-820e-bbdd95596084"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "0aa9fe80-837c-4464-920d-6169fc87c077",
+                  "title": "MitM",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "penyerang dapat menintercep pengajuan KTP pengguna lainnya dengan urutan id",
+                  "mitigation": "Implementasi UUID versi 7 dan validasi user session",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14,
+                  "score": "7,4"
+                },
+                {
+                  "id": "374ac6b0-3d99-44c8-a4d6-7f32745b2743",
+                  "title": "DoS",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Denial of service",
+                  "description": "Penyerang dapat melakukan pengajuan dengan jumlah banyak",
+                  "mitigation": "Implementasi rate limit atau captcha",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 20,
+                  "score": "7,3"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 2,
+                "denialOfService": 1
+              }
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "c4baaa3c-e859-402b-af0f-98b41981d8dc",
+            "source": {
+              "cell": "8e1157ad-dad0-4096-98c2-3b0b1450fef5",
+              "port": "f4c8cebb-3f07-45d7-8012-caecd8530aa4"
+            },
+            "target": {
+              "cell": "a5c2d942-71cf-4972-ab29-58385593f544",
+              "port": "ed3bd2b6-332f-46e5-820e-bbdd95596084"
             }
           },
           {
@@ -2809,7 +2875,7 @@
                   "severity": "Critical",
                   "type": "Spoofing",
                   "description": "Pengguna dapat mengupload file malware melalui upload file dokumen",
-                  "mitigation": "Validasi tipe dan konten file yang di-upload\nBatasi ukuran file dan jumlah upload\nSimpan file di folder yang tidak bisa dieksekusi sebagai script\nBatasi akses file hanya untuk user yang berhak",
+                  "mitigation": "Validasi tipe dan konten file yang di-upload\nSimpan file di folder yang tidak bisa dieksekusi sebagai script\nBatasi akses file hanya untuk user yang berhak",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 17,
@@ -2817,7 +2883,7 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 1,
+                "spoofing": 3,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
@@ -3905,6 +3971,6 @@
     ],
     "diagramTop": 5,
     "reviewer": "Spe Solution",
-    "threatTop": 17
+    "threatTop": 21
   }
 }
