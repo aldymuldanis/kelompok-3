@@ -1650,19 +1650,19 @@
                   "id": "8f3661c7-98c7-416e-9211-077c36f00579",
                   "title": "XSS",
                   "status": "Open",
-                  "severity": "TBD",
+                  "severity": "Medium",
                   "type": "Tampering",
                   "description": "Pengguna dapat mengirimkan script xss dari form pengaduan",
                   "mitigation": "sanitasi input",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 8,
-                  "score": ""
+                  "score": "6,3"
                 }
               ],
               "threatFrequency": {
                 "spoofing": 0,
-                "tampering": 1,
+                "tampering": 2,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
@@ -1792,24 +1792,31 @@
                   "id": "ae1c63b8-18c8-460d-b830-dd15bc6c5ddc",
                   "title": "SQL Injection",
                   "status": "Open",
-                  "severity": "TBD",
+                  "severity": "High",
                   "type": "Information disclosure",
                   "description": "Pengguna dapat mengirimkan script sql injection ",
                   "mitigation": "Menggunakan prepared statement dan sanitasi input",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 7,
-                  "score": ""
+                  "score": "7,3"
                 }
               ],
               "threatFrequency": {
                 "spoofing": 0,
                 "tampering": 0,
                 "repudiation": 0,
-                "informationDisclosure": 1,
+                "informationDisclosure": 2,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -2172,21 +2179,21 @@
                   "id": "e81eb756-f516-473e-b15a-fdbdfa589acc",
                   "title": "XSS",
                   "status": "Open",
-                  "severity": "TBD",
+                  "severity": "Medium",
                   "type": "Information disclosure",
                   "description": "script xss yang ditampilkan mengakibatkan tampilan terganggu dan pencurian cookies",
                   "mitigation": "Frontend menerapkan dompurify",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 9,
-                  "score": ""
+                  "score": "6,3"
                 }
               ],
               "threatFrequency": {
                 "spoofing": 0,
                 "tampering": 0,
                 "repudiation": 0,
-                "informationDisclosure": 1,
+                "informationDisclosure": 2,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
