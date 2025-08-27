@@ -1410,8 +1410,8 @@
                 "text": "Form Tracking"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1508,12 +1508,80 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "531a2b38-d5dd-4311-bab3-699a4362ee3e",
+                  "title": "Repudiation submit / Access",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation",
+                  "description": "User menyangkal / tidak merasa mensubmit atau mengakses form",
+                  "mitigation": "Logging request",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                },
+                {
+                  "id": "da599886-395c-4b35-8387-72b116d11d1b",
+                  "title": "Menampilkan data pribadi berlebih",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Form menampilkan detail sensitif",
+                  "mitigation": "Minimalisasi data tampilan",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                },
+                {
+                  "id": "60db0779-43b7-4df6-ad38-1ba0da5dda36",
+                  "title": "Spam form / access ",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Denial of service",
+                  "description": "Flood form menyebabkan overload server",
+                  "mitigation": "CAPTCHA, reCAPTCHA",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                },
+                {
+                  "id": "cf7e2e3f-5fe1-472d-a675-dd25e366045f",
+                  "title": "SQL Injection / Xss",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Input form tidak divalidasi → injeksi berbahaya",
+                  "mitigation": "Sanitasi input, parameterized query",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 13,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 1,
+                "repudiation": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 0
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1530,8 +1598,8 @@
                 "text": "Api Tracking"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1628,12 +1696,60 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "a0ed3513-e775-4dcc-aaac-b0a39d9a9f24",
+                  "title": "API spoofing",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing",
+                  "description": "Request palsu dari client tidak resmi",
+                  "mitigation": "Client auth, strict CORS",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
+                },
+                {
+                  "id": "1e5c7a83-e2a9-42cb-9fad-e3a493ae5111",
+                  "title": "Payload injection",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Payload ubah logika API",
+                  "mitigation": "ORM, parameterized query",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": ""
+                },
+                {
+                  "id": "4a129d92-5655-4619-b8a7-2f81d5a26345",
+                  "title": "Akses user database mempunyai privileges penuh",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Elevation of privilege",
+                  "description": "User database yang di gunakan API mempunyai full privileges ",
+                  "mitigation": "Membatasi user privileges berdasarkan kebutuhan service ",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 12,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 1
+              }
             }
           },
           {
@@ -2553,6 +2669,6 @@
     ],
     "diagramTop": 5,
     "reviewer": "Spe Solution",
-    "threatTop": 6
+    "threatTop": 13
   }
 }
