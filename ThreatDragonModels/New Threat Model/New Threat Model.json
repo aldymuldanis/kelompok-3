@@ -1769,12 +1769,12 @@
           },
           {
             "position": {
-              "x": 930,
-              "y": 340
+              "x": 950,
+              "y": 310.00000000000205
             },
             "size": {
-              "width": 160,
-              "height": 110
+              "width": 180,
+              "height": 140
             },
             "attrs": {
               "text": {
@@ -1920,13 +1920,6 @@
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -2169,12 +2162,12 @@
           },
           {
             "position": {
-              "x": 490,
-              "y": 550
+              "x": 460,
+              "y": 660
             },
             "size": {
-              "width": 140,
-              "height": 100
+              "width": 170,
+              "height": 140
             },
             "attrs": {
               "text": {
@@ -2494,51 +2487,6 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Data Flow"
-            ],
-            "id": "a889667b-69b9-4b3b-8276-2c33bcbda34d",
-            "source": {
-              "cell": "49202528-f7f9-482e-bd2f-2c1fcaadd000",
-              "port": "f4c8cebb-3f07-45d7-8012-caecd8530aa4"
-            },
-            "target": {
-              "cell": "a5c2d942-71cf-4972-ab29-58385593f544",
-              "port": "ed3bd2b6-332f-46e5-820e-bbdd95596084"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
                 "stroke": "red",
                 "strokeWidth": 2.5,
                 "targetMarker": {
@@ -2598,6 +2546,284 @@
             "target": {
               "cell": "a5c2d942-71cf-4972-ab29-58385593f544",
               "port": "ed3bd2b6-332f-46e5-820e-bbdd95596084"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "ae02f3cf-cb35-4225-8b9f-f6bc69fa3e4a",
+            "source": {
+              "cell": "5606a7be-9b99-4a85-a83a-178a1bd1109f",
+              "port": "84f0de20-6067-4bad-999b-89419141c158"
+            },
+            "target": {
+              "cell": "78a34a60-100d-4e6c-8211-e6c29ddac4d7",
+              "port": "95a91d4c-2973-4fbb-a8ae-e1307d1f02e4"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Upload dokumen",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Upload dokumen"
+            ],
+            "id": "03b5efda-3ace-42c5-82dd-9e9289517db8",
+            "source": {
+              "cell": "78a34a60-100d-4e6c-8211-e6c29ddac4d7",
+              "port": "7b5b660c-d56f-4f9d-82a7-4bd2d0c4c83c"
+            },
+            "target": {
+              "cell": "a5c2d942-71cf-4972-ab29-58385593f544",
+              "port": "ed3bd2b6-332f-46e5-820e-bbdd95596084"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "a889667b-69b9-4b3b-8276-2c33bcbda34d",
+            "source": {
+              "cell": "49202528-f7f9-482e-bd2f-2c1fcaadd000",
+              "port": "f4c8cebb-3f07-45d7-8012-caecd8530aa4"
+            },
+            "target": {
+              "cell": "a5c2d942-71cf-4972-ab29-58385593f544",
+              "port": "a9737b87-08cf-4256-b895-5c6d3c5f838b"
+            }
+          },
+          {
+            "position": {
+              "x": 460,
+              "y": 405
+            },
+            "size": {
+              "width": 200,
+              "height": 130
+            },
+            "attrs": {
+              "text": {
+                "text": "Upload Dokumen"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "43692436-d9ed-43ba-b308-ba554116cbb5"
+                },
+                {
+                  "group": "right",
+                  "id": "7b5b660c-d56f-4f9d-82a7-4bd2d0c4c83c"
+                },
+                {
+                  "group": "bottom",
+                  "id": "221eb2fc-912b-4c28-b89f-0c79aa5d4d7b"
+                },
+                {
+                  "group": "left",
+                  "id": "95a91d4c-2973-4fbb-a8ae-e1307d1f02e4"
+                }
+              ]
+            },
+            "id": "78a34a60-100d-4e6c-8211-e6c29ddac4d7",
+            "zIndex": 11,
+            "data": {
+              "type": "tm.Process",
+              "name": "Upload Dokumen",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "c7642dc1-80f6-4866-b912-06c382df99de",
+                  "title": "Malware Upload",
+                  "status": "Open",
+                  "severity": "Critical",
+                  "type": "Spoofing",
+                  "description": "Pengguna dapat mengupload file malware melalui upload file dokumen",
+                  "mitigation": "Validasi tipe dan konten file yang di-upload\nBatasi ukuran file dan jumlah upload\nSimpan file di folder yang tidak bisa dieksekusi sebagai script\nBatasi akses file hanya untuk user yang berhak",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 17,
+                  "score": "9,8"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           }
         ]
@@ -3679,6 +3905,6 @@
     ],
     "diagramTop": 5,
     "reviewer": "Spe Solution",
-    "threatTop": 16
+    "threatTop": 17
   }
 }
