@@ -2771,6 +2771,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -2854,7 +2855,6 @@
               ]
             },
             "id": "78a34a60-100d-4e6c-8211-e6c29ddac4d7",
-            "zIndex": 11,
             "data": {
               "type": "tm.Process",
               "name": "Upload Dokumen",
