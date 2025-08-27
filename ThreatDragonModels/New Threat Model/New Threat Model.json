@@ -26,1250 +26,7 @@
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.5.0",
-        "cells": [
-          {
-            "position": {
-              "x": 180,
-              "y": 240
-            },
-            "size": {
-              "width": 112.5,
-              "height": 60
-            },
-            "attrs": {
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "actor",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "1b2f61b6-ac35-4163-a268-4ff9b12174c9"
-                },
-                {
-                  "group": "right",
-                  "id": "e8f4aeb3-a81b-4fa2-9943-ec7e7baa3b55"
-                },
-                {
-                  "group": "bottom",
-                  "id": "683fade4-05d2-4b05-8052-004e5b0c9b15"
-                },
-                {
-                  "group": "left",
-                  "id": "e099fd4f-ffb8-408d-8c46-a067cf42f0f6"
-                }
-              ]
-            },
-            "id": "30dfb961-48e7-4910-bc70-41194f56ce30",
-            "zIndex": 1,
-            "data": {
-              "type": "tm.Actor",
-              "name": "Actor",
-              "description": "",
-              "isTrustBoundary": false,
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "providesAuthentication": false,
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 660,
-              "y": 110
-            },
-            "size": {
-              "width": 150,
-              "height": 130
-            },
-            "attrs": {
-              "text": {
-                "text": "API Registrasi"
-              },
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "process",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "a034d52d-7563-42bb-9c5b-a72a217d3039"
-                },
-                {
-                  "group": "right",
-                  "id": "608e5b5f-b1a3-4b23-b2bd-944362ac5ce6"
-                },
-                {
-                  "group": "bottom",
-                  "id": "98fce96e-3606-489c-b311-1ef4480cfe33"
-                },
-                {
-                  "group": "left",
-                  "id": "2227014c-200a-4af2-b36a-f4953af7a73d"
-                }
-              ]
-            },
-            "id": "461b017c-5de0-4744-b72c-76334b9c2b69",
-            "zIndex": 2,
-            "data": {
-              "type": "tm.Process",
-              "name": "API Registrasi",
-              "description": "API to handle registration with NIK dan Kartu Keluarga",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "handlesCardPayment": false,
-              "handlesGoodsOrServices": false,
-              "isWebApplication": false,
-              "privilegeLevel": "",
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 954,
-              "y": 242.00000000000023
-            },
-            "size": {
-              "width": 170,
-              "height": 70
-            },
-            "attrs": {
-              "text": {
-                "text": "Store: Warga Konoha"
-              },
-              "topLine": {
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              },
-              "bottomLine": {
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "store",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "b7d1d1eb-ecc6-4b8d-86d3-4f6f3c1b8998"
-                },
-                {
-                  "group": "right",
-                  "id": "f87a7522-e441-4c4d-bd81-aa7df34c3c51"
-                },
-                {
-                  "group": "bottom",
-                  "id": "97e17a27-eb6d-44e9-ae6d-5fecc2c3a8b4"
-                },
-                {
-                  "group": "left",
-                  "id": "285a92bb-3999-444f-9671-d4f2fac129c2"
-                }
-              ]
-            },
-            "id": "d43d84f1-4314-4a68-8007-6c9c292b1704",
-            "zIndex": 3,
-            "data": {
-              "type": "tm.Store",
-              "name": "Store: Warga Konoha",
-              "description": "Database",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isALog": false,
-              "isEncrypted": false,
-              "isSigned": false,
-              "storesCredentials": false,
-              "storesInventory": false,
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 660,
-              "y": 302.0000000000001
-            },
-            "size": {
-              "width": 150,
-              "height": 130
-            },
-            "attrs": {
-              "text": {
-                "text": "API Login"
-              },
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "process",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "a034d52d-7563-42bb-9c5b-a72a217d3039"
-                },
-                {
-                  "group": "right",
-                  "id": "608e5b5f-b1a3-4b23-b2bd-944362ac5ce6"
-                },
-                {
-                  "group": "bottom",
-                  "id": "98fce96e-3606-489c-b311-1ef4480cfe33"
-                },
-                {
-                  "group": "left",
-                  "id": "2227014c-200a-4af2-b36a-f4953af7a73d"
-                }
-              ]
-            },
-            "id": "7b630bae-4abc-45f9-b2e0-fe2a4e47b6d4",
-            "data": {
-              "type": "tm.Process",
-              "name": "API Login",
-              "description": "API to handle user login with NIK and password",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "handlesCardPayment": false,
-              "handlesGoodsOrServices": false,
-              "isWebApplication": true,
-              "privilegeLevel": "",
-              "threats": []
-            },
-            "zIndex": 4
-          },
-          {
-            "position": {
-              "x": 374,
-              "y": 114
-            },
-            "size": {
-              "width": 150,
-              "height": 130
-            },
-            "attrs": {
-              "text": {
-                "text": "UI: Registrasi"
-              },
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "process",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "a034d52d-7563-42bb-9c5b-a72a217d3039"
-                },
-                {
-                  "group": "right",
-                  "id": "608e5b5f-b1a3-4b23-b2bd-944362ac5ce6"
-                },
-                {
-                  "group": "bottom",
-                  "id": "98fce96e-3606-489c-b311-1ef4480cfe33"
-                },
-                {
-                  "group": "left",
-                  "id": "2227014c-200a-4af2-b36a-f4953af7a73d"
-                }
-              ]
-            },
-            "id": "13ec45d4-0d8e-4492-8483-356e1cdb4a7f",
-            "data": {
-              "type": "tm.Process",
-              "name": "UI: Registrasi",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "handlesCardPayment": false,
-              "handlesGoodsOrServices": false,
-              "isWebApplication": false,
-              "privilegeLevel": "",
-              "threats": []
-            },
-            "zIndex": 5
-          },
-          {
-            "position": {
-              "x": 374,
-              "y": 300
-            },
-            "size": {
-              "width": 150,
-              "height": 130
-            },
-            "attrs": {
-              "text": {
-                "text": "UI: Login"
-              },
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "process",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "a034d52d-7563-42bb-9c5b-a72a217d3039"
-                },
-                {
-                  "group": "right",
-                  "id": "608e5b5f-b1a3-4b23-b2bd-944362ac5ce6"
-                },
-                {
-                  "group": "bottom",
-                  "id": "98fce96e-3606-489c-b311-1ef4480cfe33"
-                },
-                {
-                  "group": "left",
-                  "id": "2227014c-200a-4af2-b36a-f4953af7a73d"
-                }
-              ]
-            },
-            "id": "0340784d-089d-4f25-9e16-5e3e3df447fe",
-            "data": {
-              "type": "tm.Process",
-              "name": "UI: Login",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "handlesCardPayment": false,
-              "handlesGoodsOrServices": false,
-              "isWebApplication": false,
-              "privilegeLevel": "",
-              "threats": []
-            },
-            "zIndex": 6
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Accept Response",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": true,
-              "isPublicNetwork": true,
-              "protocol": "https",
-              "threats": []
-            },
-            "labels": [
-              "Accept Response"
-            ],
-            "id": "b210b524-2ddb-4946-888a-00d64fbe751b",
-            "source": {
-              "cell": "13ec45d4-0d8e-4492-8483-356e1cdb4a7f",
-              "port": "2227014c-200a-4af2-b36a-f4953af7a73d"
-            },
-            "target": {
-              "cell": "30dfb961-48e7-4910-bc70-41194f56ce30",
-              "port": "e8f4aeb3-a81b-4fa2-9943-ec7e7baa3b55"
-            },
-            "vertices": [
-              {
-                "x": 350,
-                "y": 230
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": "block"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": true,
-              "isEncrypted": true,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Data Flow"
-            ],
-            "id": "4b123612-fd3e-4cb2-ab77-d697b2393950",
-            "source": {
-              "cell": "461b017c-5de0-4744-b72c-76334b9c2b69",
-              "port": "608e5b5f-b1a3-4b23-b2bd-944362ac5ce6"
-            },
-            "target": {
-              "cell": "d43d84f1-4314-4a68-8007-6c9c292b1704",
-              "port": "285a92bb-3999-444f-9671-d4f2fac129c2"
-            },
-            "vertices": [
-              {
-                "x": 900,
-                "y": 250
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Post Registration",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": true,
-              "isPublicNetwork": true,
-              "protocol": "https",
-              "threats": []
-            },
-            "labels": [
-              "Post Registration"
-            ],
-            "id": "6034f42d-6924-4506-bc5f-096321938492",
-            "source": {
-              "cell": "13ec45d4-0d8e-4492-8483-356e1cdb4a7f",
-              "port": "608e5b5f-b1a3-4b23-b2bd-944362ac5ce6"
-            },
-            "target": {
-              "cell": "461b017c-5de0-4744-b72c-76334b9c2b69",
-              "port": "2227014c-200a-4af2-b36a-f4953af7a73d"
-            },
-            "vertices": [
-              {
-                "x": 560,
-                "y": 150
-              },
-              {
-                "x": 600,
-                "y": 150
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Resp API",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": true,
-              "isPublicNetwork": true,
-              "protocol": "https",
-              "threats": []
-            },
-            "labels": [
-              "Resp API"
-            ],
-            "id": "cb50b4e6-0889-4dd9-a1a9-cc426cfb25e3",
-            "source": {
-              "cell": "461b017c-5de0-4744-b72c-76334b9c2b69",
-              "port": "2227014c-200a-4af2-b36a-f4953af7a73d"
-            },
-            "target": {
-              "cell": "13ec45d4-0d8e-4492-8483-356e1cdb4a7f",
-              "port": "608e5b5f-b1a3-4b23-b2bd-944362ac5ce6"
-            },
-            "vertices": [
-              {
-                "x": 630,
-                "y": 200
-              },
-              {
-                "x": 600,
-                "y": 220
-              },
-              {
-                "x": 560,
-                "y": 200
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Request Registration",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": true,
-              "isPublicNetwork": true,
-              "protocol": "https",
-              "threats": []
-            },
-            "labels": [
-              "Request Registration"
-            ],
-            "id": "17544f03-6cdb-4b7c-a1d1-d4efed3a1c13",
-            "source": {
-              "cell": "30dfb961-48e7-4910-bc70-41194f56ce30",
-              "port": "1b2f61b6-ac35-4163-a268-4ff9b12174c9"
-            },
-            "target": {
-              "cell": "13ec45d4-0d8e-4492-8483-356e1cdb4a7f",
-              "port": "2227014c-200a-4af2-b36a-f4953af7a73d"
-            },
-            "vertices": [
-              {
-                "x": 270,
-                "y": 220
-              },
-              {
-                "x": 290,
-                "y": 200
-              },
-              {
-                "x": 330,
-                "y": 179
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": true,
-              "isPublicNetwork": true,
-              "protocol": "https",
-              "threats": []
-            },
-            "labels": [
-              "Data Flow"
-            ],
-            "id": "753eaad6-fe02-43fe-a5f0-bf3ffa549084",
-            "source": {
-              "cell": "30dfb961-48e7-4910-bc70-41194f56ce30",
-              "port": "683fade4-05d2-4b05-8052-004e5b0c9b15"
-            },
-            "target": {
-              "cell": "0340784d-089d-4f25-9e16-5e3e3df447fe",
-              "port": "2227014c-200a-4af2-b36a-f4953af7a73d"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Data Flow"
-            ],
-            "id": "a0b66166-8282-466d-afa6-ff375de7864f",
-            "source": {
-              "cell": "0340784d-089d-4f25-9e16-5e3e3df447fe",
-              "port": "2227014c-200a-4af2-b36a-f4953af7a73d"
-            },
-            "target": {
-              "cell": "30dfb961-48e7-4910-bc70-41194f56ce30",
-              "port": "e8f4aeb3-a81b-4fa2-9943-ec7e7baa3b55"
-            },
-            "vertices": [
-              {
-                "x": 340,
-                "y": 300
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": true,
-              "isPublicNetwork": true,
-              "protocol": "https",
-              "threats": []
-            },
-            "labels": [
-              "Data Flow"
-            ],
-            "id": "2b99f32c-83df-430e-8258-e36d51284fdc",
-            "source": {
-              "cell": "0340784d-089d-4f25-9e16-5e3e3df447fe",
-              "port": "608e5b5f-b1a3-4b23-b2bd-944362ac5ce6"
-            },
-            "target": {
-              "cell": "7b630bae-4abc-45f9-b2e0-fe2a4e47b6d4",
-              "port": "2227014c-200a-4af2-b36a-f4953af7a73d"
-            },
-            "vertices": [
-              {
-                "x": 590,
-                "y": 330
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Data Flow"
-            ],
-            "id": "b7793b7d-461c-4b5d-85d5-1869e9608e22",
-            "source": {
-              "cell": "7b630bae-4abc-45f9-b2e0-fe2a4e47b6d4",
-              "port": "2227014c-200a-4af2-b36a-f4953af7a73d"
-            },
-            "target": {
-              "cell": "0340784d-089d-4f25-9e16-5e3e3df447fe",
-              "port": "608e5b5f-b1a3-4b23-b2bd-944362ac5ce6"
-            },
-            "vertices": [
-              {
-                "x": 590,
-                "y": 400
-              },
-              {
-                "x": 580,
-                "y": 400
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": "block"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": true,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Data Flow"
-            ],
-            "id": "25c5f132-f02d-4fd8-82ab-afb1c29c4579",
-            "source": {
-              "cell": "7b630bae-4abc-45f9-b2e0-fe2a4e47b6d4",
-              "port": "608e5b5f-b1a3-4b23-b2bd-944362ac5ce6"
-            },
-            "target": {
-              "cell": "d43d84f1-4314-4a68-8007-6c9c292b1704",
-              "port": "285a92bb-3999-444f-9671-d4f2fac129c2"
-            },
-            "vertices": []
-          }
-        ]
+        "cells": []
       },
       {
         "id": 1,
@@ -1287,11 +44,717 @@
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.5.0",
-        "cells": []
+        "cells": [
+          {
+            "position": {
+              "x": 591.9999999999998,
+              "y": 100
+            },
+            "size": {
+              "width": 450,
+              "height": 260
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "zIndex": -1,
+            "id": "c0c06240-b2a1-4e33-abcb-9c651d8ced8b",
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 40,
+              "y": 210
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "zIndex": 1,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "d87cd424-cd19-49c2-9dbb-c5d9fe782e80"
+                },
+                {
+                  "group": "right",
+                  "id": "322a5f54-afcf-4c47-bad6-7ac1f9c21fbb"
+                },
+                {
+                  "group": "bottom",
+                  "id": "41e12581-1938-4668-82a5-932da07f9ca1"
+                },
+                {
+                  "group": "left",
+                  "id": "0b1b5962-771f-4b4b-ba47-c6af9a88d070"
+                }
+              ]
+            },
+            "id": "000196d2-c0b4-43ce-b1b0-c4cea5eff01b",
+            "data": {
+              "type": "tm.Actor",
+              "name": "Actor",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 260,
+              "y": 130
+            },
+            "size": {
+              "width": 140,
+              "height": 100
+            },
+            "attrs": {
+              "text": {
+                "text": "Form Tracking"
+              },
+              "body": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "zIndex": 2,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "60b1e26a-4907-4a45-9bc4-5f78c692d698"
+                },
+                {
+                  "group": "right",
+                  "id": "1a7637ab-ad47-4355-abd8-0073c54baf1d"
+                },
+                {
+                  "group": "bottom",
+                  "id": "26c76667-d775-4f78-bd04-79fd83728413"
+                },
+                {
+                  "group": "left",
+                  "id": "ab8b998f-f6bd-415b-9798-c67afe5bb276"
+                }
+              ]
+            },
+            "id": "3813f066-03e6-4bfb-a8fd-2daebc03e014",
+            "data": {
+              "type": "tm.Process",
+              "name": "Form Tracking",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": [
+                {
+                  "id": "44010c25-7e44-41c6-928e-5a2aded66e52",
+                  "title": "SQL Injection / XSS",
+                  "status": "Mitigated",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "input form dimodifikasi untuk serangan injeksi",
+                  "mitigation": "Sanitasi input, parameterized query",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": "4"
+                },
+                {
+                  "id": "8a1dc4e6-291e-414c-807f-c6ea716ab4a4",
+                  "title": "Form phishing",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Spoofing",
+                  "description": "Attacker buat form palsu menyerupai form asli",
+                  "mitigation": "HTTPS, validasi domain, edukasi pengguna",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": "3"
+                },
+                {
+                  "id": "a90ab461-1042-4670-bf60-38d3e0ce7d8c",
+                  "title": "Menampilkan data pribadi berlebihan",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Information disclosure",
+                  "description": "Form menampilkan lebih banyak data dari yang perlu",
+                  "mitigation": "Tampilkan hanya status, minimalisasi data",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": "4"
+                },
+                {
+                  "id": "e7c26596-f068-4fc4-be9b-cbd214effde6",
+                  "title": "Spam form",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Spam input menyebabkan overload server",
+                  "mitigation": "CAPTCHA, reCAPTCHA",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": "3"
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 0
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            }
+          },
+          {
+            "position": {
+              "x": 640,
+              "y": 195
+            },
+            "size": {
+              "width": 120,
+              "height": 90
+            },
+            "attrs": {
+              "text": {
+                "text": "Api Tracking"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "zIndex": 3,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "60b1e26a-4907-4a45-9bc4-5f78c692d698"
+                },
+                {
+                  "group": "right",
+                  "id": "1a7637ab-ad47-4355-abd8-0073c54baf1d"
+                },
+                {
+                  "group": "bottom",
+                  "id": "26c76667-d775-4f78-bd04-79fd83728413"
+                },
+                {
+                  "group": "left",
+                  "id": "ab8b998f-f6bd-415b-9798-c67afe5bb276"
+                }
+              ]
+            },
+            "id": "4fc7f9cf-3102-4f95-8a1c-e3baf1c09832",
+            "data": {
+              "type": "tm.Process",
+              "name": "Api Tracking",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 900,
+              "y": 210
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Database"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "zIndex": 4,
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "ec02447b-0970-4719-a314-ea60dd78960a"
+                },
+                {
+                  "group": "right",
+                  "id": "ccb30e15-5f33-4d68-a3b1-f01bc5a66647"
+                },
+                {
+                  "group": "bottom",
+                  "id": "4d1a64b6-825f-4b6b-b7fb-6020e89ed861"
+                },
+                {
+                  "group": "left",
+                  "id": "0c0ab7e8-d8dd-4169-959c-ee67f928ad4c"
+                }
+              ]
+            },
+            "id": "2221b9ef-9503-426e-a395-972beeba30e1",
+            "data": {
+              "type": "tm.Store",
+              "name": "Database",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "55ccbf9d-fee2-4f59-83e9-be3ae51ac662",
+            "source": {
+              "cell": "000196d2-c0b4-43ce-b1b0-c4cea5eff01b",
+              "port": "322a5f54-afcf-4c47-bad6-7ac1f9c21fbb"
+            },
+            "target": {
+              "cell": "3813f066-03e6-4bfb-a8fd-2daebc03e014",
+              "port": "ab8b998f-f6bd-415b-9798-c67afe5bb276"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Post HTTP/S Req",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Post HTTP/S Req"
+            ],
+            "id": "55c7b615-8022-4b3b-9b0d-42abd52cd3f4",
+            "source": {
+              "cell": "3813f066-03e6-4bfb-a8fd-2daebc03e014",
+              "port": "1a7637ab-ad47-4355-abd8-0073c54baf1d"
+            },
+            "target": {
+              "cell": "4fc7f9cf-3102-4f95-8a1c-e3baf1c09832",
+              "port": "ab8b998f-f6bd-415b-9798-c67afe5bb276"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "857e69bc-3846-4ee8-9417-edf6bc6dcb83",
+            "source": {
+              "x": 770,
+              "y": 240
+            },
+            "target": {
+              "cell": "2221b9ef-9503-426e-a395-972beeba30e1",
+              "port": "0c0ab7e8-d8dd-4169-959c-ee67f928ad4c"
+            },
+            "vertices": []
+          }
+        ]
       },
       {
         "id": 3,
-        "title": "New STRIDE diagram",
+        "title": "Jadwal & Pengambilan KTP",
         "diagramType": "STRIDE",
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
@@ -1300,7 +763,7 @@
       },
       {
         "id": 4,
-        "title": "New STRIDE diagram",
+        "title": "Layanan Tambahan",
         "diagramType": "STRIDE",
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
@@ -1310,6 +773,6 @@
     ],
     "diagramTop": 5,
     "reviewer": "Spe Solution",
-    "threatTop": 0
+    "threatTop": 4
   }
 }
