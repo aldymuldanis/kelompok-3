@@ -1395,8 +1395,29 @@
         "cells": [
           {
             "position": {
-              "x": 70,
-              "y": 210
+              "x": 749.9999999999995,
+              "y": 110.00000000000131
+            },
+            "size": {
+              "width": 800,
+              "height": 570
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "48173ebc-2d2c-46b8-b827-13390b6a73ce",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 60,
+              "y": 220
             },
             "size": {
               "width": 112.5,
@@ -1509,8 +1530,8 @@
           },
           {
             "position": {
-              "x": 420,
-              "y": 130.00000000000017
+              "x": 400,
+              "y": 120
             },
             "size": {
               "width": 160,
@@ -1521,8 +1542,8 @@
                 "text": "Form Pengaduan"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1619,17 +1640,39 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "8f3661c7-98c7-416e-9211-077c36f00579",
+                  "title": "XSS",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Pengguna dapat mengirimkan script xss dari form pengaduan",
+                  "mitigation": "sanitasi input",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
             "position": {
-              "x": 748,
+              "x": 850,
               "y": 330
             },
             "size": {
@@ -1641,8 +1684,8 @@
                 "text": "API"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1739,12 +1782,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "ae1c63b8-18c8-460d-b830-dd15bc6c5ddc",
+                  "title": "SQL Injection",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Pengguna dapat mengirimkan script sql injection ",
+                  "mitigation": "Menggunakan prepared statement dan sanitasi input",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -1863,8 +1928,8 @@
           },
           {
             "position": {
-              "x": 980,
-              "y": 370
+              "x": 1290,
+              "y": 380
             },
             "size": {
               "width": 120,
@@ -1983,13 +2048,6 @@
               "storesCredentials": false,
               "storesInventory": false,
               "threats": []
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
@@ -2006,8 +2064,8 @@
                 "text": "List Pengaduan Online"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -2104,19 +2162,288 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "e81eb756-f516-473e-b15a-fdbdfa589acc",
+                  "title": "XSS",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "script xss yang ditampilkan mengakibatkan tampilan terganggu dan pencurian cookies",
+                  "mitigation": "Frontend menerapkan dompurify",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Get Request",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Get Request"
+            ],
+            "id": "5cd7900f-e42e-461c-acd6-c77fa6f2632a",
+            "source": {
+              "x": 550,
+              "y": 620
+            },
+            "target": {
+              "cell": "f9d9d001-ed5e-4653-8037-ecaee76d65c4",
+              "port": "e769a49b-887e-41b8-967c-c95505ba66cf"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "req",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "req"
+            ],
+            "id": "95127adb-1ec0-40cb-b90a-08c6f52ce39d",
+            "source": {
+              "x": 190,
+              "y": 530
+            },
+            "target": {
+              "x": 360,
+              "y": 610
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Post Request",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "2b7afbbd-f941-49b0-8676-9b809a6a989e",
+                  "title": "DoS",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Denial of service",
+                  "description": "Penyerang dapat mengirimkan request pengaduan dalam jumlah banyak",
+                  "mitigation": "Menerapkan rate limit atau captcha",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1
+              }
+            },
+            "labels": [
+              "Post Request"
+            ],
+            "id": "c57a4ba3-57e0-4bec-89e9-69fb8a640a75",
+            "source": {
+              "cell": "4b169156-3eaf-48c9-a474-b2fbf4b6bb8a",
+              "port": "7b774477-c0b2-47f8-aefd-727196443667"
+            },
+            "target": {
+              "cell": "f9d9d001-ed5e-4653-8037-ecaee76d65c4",
+              "port": "e769a49b-887e-41b8-967c-c95505ba66cf"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Req Pengaduan",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Req Pengaduan"
+            ],
+            "id": "262090b3-f76c-4b6a-98e4-017bb284a6e6",
+            "source": {
+              "cell": "5b16f624-cd72-4860-84cf-cdd54136319f",
+              "port": "d8eb3aba-d30e-4419-a958-442570ca6434"
+            },
+            "target": {
+              "cell": "4b169156-3eaf-48c9-a474-b2fbf4b6bb8a",
+              "port": "e769a49b-887e-41b8-967c-c95505ba66cf"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "query",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "query"
+            ],
+            "id": "57cfafea-e954-42ff-889c-ff769db9b402",
+            "source": {
+              "x": 1000,
+              "y": 396
+            },
+            "target": {
+              "cell": "7ef661ae-e0ca-4cca-bae5-f592b908082d",
+              "port": "39b78a07-1514-4da1-bb60-f8e36a5d90a5"
+            },
+            "vertices": []
           }
         ]
       }
     ],
     "diagramTop": 5,
     "reviewer": "Spe Solution",
-    "threatTop": 6
+    "threatTop": 10
   }
 }
