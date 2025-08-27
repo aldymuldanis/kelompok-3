@@ -2048,12 +2048,12 @@
               "threats": [
                 {
                   "id": "1c1607ec-a6e3-4ae0-b4fb-72b10063c949",
-                  "title": "Misconfiguratuin Server",
+                  "title": " Security Misconfiguration",
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Information disclosure",
                   "description": "Dokumen dapat diakses secara publik",
-                  "mitigation": "Simpan dokumen terpisah dari server aplikasi\nBatasi akses dokumen",
+                  "mitigation": "Simpan dokumen terpisah dari server aplikasi\nBatasi akses dokumen\nImplementasi CICD\nHapus dummy, debuging, sample fitur ",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 22,
@@ -2063,7 +2063,7 @@
               "threatFrequency": {
                 "tampering": 0,
                 "repudiation": 0,
-                "informationDisclosure": 1,
+                "informationDisclosure": 3,
                 "denialOfService": 0
               }
             }
@@ -2462,51 +2462,6 @@
             "labels": [
               "Data Flow"
             ],
-            "id": "efc6eca2-aa10-4a36-8f7e-b1a7ca959bf9",
-            "source": {
-              "cell": "a5c2d942-71cf-4972-ab29-58385593f544",
-              "port": "f4c8cebb-3f07-45d7-8012-caecd8530aa4"
-            },
-            "target": {
-              "cell": "0c17d958-6333-4b32-9a7e-5fd13db05c44",
-              "port": "f53731f7-fe29-4361-ac31-9a7d4cd91c9b"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": "block"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": true,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Data Flow"
-            ],
             "id": "a883e877-5998-476f-9c54-754acd3414fc",
             "source": {
               "cell": "a5c2d942-71cf-4972-ab29-58385593f544",
@@ -2776,7 +2731,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -2797,12 +2753,31 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "2adb85cb-e735-4583-963a-f671b9e8fe2e",
+                  "title": "Vulnerable and Outdated Components",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Penyerang dapat memanfaatkan vulnerability dari component ",
+                  "mitigation": "Dokumentasi Plugin party\nMengunakan plugin party yang tidak ada vulnerability\nReview secara berkala plugin party yang digunakan",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 23,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "Produce"
@@ -2817,6 +2792,71 @@
               "port": "f7e93d7d-f7bd-4834-9104-44b0424b206f"
             },
             "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": "block"
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": true,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "581f1aee-17f1-4c31-95b3-23b67259666c",
+                  "title": "Vulnerable and Outdated Components",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Penyerang dapat memanfaatkan vulnerability dari component ",
+                  "mitigation": "Dokumentasi Plugin party\nMengunakan plugin party yang tidak ada vulnerability\nReview secara berkala plugin party yang digunakan",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 24,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "efc6eca2-aa10-4a36-8f7e-b1a7ca959bf9",
+            "source": {
+              "cell": "a5c2d942-71cf-4972-ab29-58385593f544",
+              "port": "f4c8cebb-3f07-45d7-8012-caecd8530aa4"
+            },
+            "target": {
+              "cell": "0c17d958-6333-4b32-9a7e-5fd13db05c44",
+              "port": "f53731f7-fe29-4361-ac31-9a7d4cd91c9b"
+            }
           },
           {
             "position": {
@@ -4163,6 +4203,6 @@
     ],
     "diagramTop": 5,
     "reviewer": "Spe Solution",
-    "threatTop": 22
+    "threatTop": 24
   }
 }
