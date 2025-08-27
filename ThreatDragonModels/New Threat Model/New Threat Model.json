@@ -486,8 +486,8 @@
                 "text": "API Login"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -583,14 +583,82 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": true,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "98ecf327-5427-4fce-b76b-93aa87d77cfe",
+                  "title": "SQL Injection",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Attacker dapat mengakses semua data user seperti username, NIK, Nomor KK dan password\n",
+                  "mitigation": "- Validasi dan sanitasi input.\n- Parameterized query.\n- Gunakan ORM",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                },
+                {
+                  "id": "f618d564-98f3-4ae6-97a7-2b96cc949c04",
+                  "title": "Cryptographic Failures",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "- Penyimpanan password tidak aman, menggunakan algoritma cryptographic yang sudah usang.\n",
+                  "mitigation": "- Untuk hashing password gunakan algoritma cryptographic yang aman seperti argon2 dan bcrypt.\n",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                },
+                {
+                  "id": "63762e9f-5936-41bd-8358-c2d564d1f8b5",
+                  "title": "Insecure design",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "NIK atau No KK dijadikan faktor autentikasi utama. NIK/KK sering diketahui pihak lain sehingga risiko fraud tinggi\n",
+                  "mitigation": "NIK/KK hanya sebagai verifier pendaftaran, bukan faktor utama login; gunakan username lain, wajibkan password kuat + MFA",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                },
+                {
+                  "id": "921e43c9-96b3-4077-a389-828e67824e52",
+                  "title": "Brute force login",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Denial of service",
+                  "description": "Brute force username dan password untuk login. Bisa menyebabkan DoS",
+                  "mitigation": "- Penerapan rate limit.\n- Penerapan MFA.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 3,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 0
+              }
             },
-            "zIndex": 4
+            "zIndex": 4,
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            }
           },
           {
             "position": {
@@ -938,7 +1006,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -959,12 +1028,44 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": true,
               "isPublicNetwork": true,
               "protocol": "https",
-              "threats": []
+              "threats": [
+                {
+                  "id": "4777a080-7eb4-47c1-a35e-ae9b6d53d7ae",
+                  "title": "Cross Site Scripting",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "- Attacker menyisipkan script tertentu untuk melakukan tampering. \n- Attacker dapat mengakses resources (halaman web/menu/fitur) yang dimiliki pengguna.",
+                  "mitigation": "- Limitasi durasi session.\n- Gunakan konfigurasi header yang aman sperti secure cookies dan http only.\n- Validasi inputan dari user.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 12,
+                  "score": ""
+                },
+                {
+                  "id": "81740224-1dcf-48d5-a776-36327c948c3e",
+                  "title": "Trasnport tidak aman",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Username, password hijacked",
+                  "mitigation": "- Gunakan TLS 1.3\n- Nonaktifkan http",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 14,
+                  "score": "6"
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 2,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "Post Registration"
@@ -980,11 +1081,11 @@
             },
             "vertices": [
               {
-                "x": 560,
+                "x": 550,
                 "y": 150
               },
               {
-                "x": 600,
+                "x": 630,
                 "y": 150
               }
             ]
@@ -1208,7 +1309,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1229,12 +1331,31 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": true,
               "isPublicNetwork": true,
               "protocol": "https",
-              "threats": []
+              "threats": [
+                {
+                  "id": "f345facb-f5bc-4420-837b-5f19647d0e33",
+                  "title": "Trasnport tidak aman",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Username, password hijacked",
+                  "mitigation": "- Gunakan TLS 1.3\n- Nonaktifkan http",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 13,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "Data Flow"
@@ -1251,6 +1372,10 @@
             "vertices": [
               {
                 "x": 590,
+                "y": 330
+              },
+              {
+                "x": 610,
                 "y": 330
               }
             ]
@@ -1397,6 +1522,6 @@
     ],
     "diagramTop": 5,
     "reviewer": "Spe Solution",
-    "threatTop": 6
+    "threatTop": 14
   }
 }
